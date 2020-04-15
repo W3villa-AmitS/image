@@ -60,7 +60,7 @@ INSTALLED_APPS = [
 
     'users',
     'jobs',
-    'health'
+   
 ]
 
 AUTH_USER_MODEL = 'users.User'
@@ -127,34 +127,6 @@ DYNAMO_AWS_ACCESS = {
 }
 
 
-#
-# https://stackoverflow.com/questions/18547468/multiple-databases-and-multiple-models-in-django
-#
-# Define the database manager to setup the various projects
-# DATABASE_ROUTERS = ['manager.router.DatabaseAppsRouter']
-# DATABASE_APPS_MAPPING = {'user_data': 'auth',
-#                          'job_data' :  os.path.join(BASE_DIR, 'db.sqlite3') }
-
-
-# DATABASES = {
-#     'users': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'image-factory',
-#         'USER': 'postgres-admin',
-#         'PASSWORD': 'password123',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-#
-#     'jobs': {
-#          'ENGINE': 'django.db.backends.sqlite3',
-#          'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-
-# Password validation
-# https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     # {
@@ -254,13 +226,9 @@ MICRO_SERVICES = {
 }
 
 SYSTEM_EMAIL_RECIPIENTS = [
-    'farhat.siddiqui@idemia.com',
-    'rishi.parihar@idemia.com',
-    'saurabh.rautela@idemia.com',
-    'akshaya.puvvada@idemia.com',
-    'ketan.agarwal@idemia.com',
-    'amit.sharma4@idemia.com',
-    'mallika.sharma@idemia.com'
+    
+    'amit.sharma4@w3villa.com',
+    
 ]
 
 CELERY_BROKER_URL = CELERY_BROKER_URL_VALUE

@@ -9,7 +9,7 @@ os.environ.setdefault('FORKED_BY_MULTIPROCESSING', '1')
 
 app = Celery('api')
 
-app.conf.task_default_queue = 'imagefactory'
+app.conf.task_default_queue = 'w3villa'
 
 # Using a string here means the worker doesn't have to serialize
 # the configuration object to child processes.
