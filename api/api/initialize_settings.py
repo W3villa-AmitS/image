@@ -93,8 +93,8 @@ except KeyError:
     DYNAMO_URL = 'http://localhost:8080'
     DYNAMO_REGION = 'ap-south-1'
     RESULT_PROCESSING_URL = 'http://localhost:5051'
-    AWS_KEY_ID = 'AKIAISRMNIBW5XT32AIQ'
-    AWS_ACCESS_KEY = 't1U0Sa3XGZazajmnqzTLGNrbHVDxMeRfh0qnlPEw'
+    AWS_KEY_ID = 'Name'
+    AWS_ACCESS_KEY = 'key'
     # Check to ensure it is not production environment
     try:
         env = 'development'
